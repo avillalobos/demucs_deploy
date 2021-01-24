@@ -1,0 +1,6 @@
+[submodule "demucs_service"]
+	path = demucs_service
+	url = https://github.com/avillalobos/demucs_service.git
+[submodule "demucs_webapp"]
+	path = demucs_webapp
+	url = https://github.com/avillalobos/demucs_webapp.git

@@ -1,0 +1,18 @@
+services:
+  demucs_webapp:
+    build:
+      context: demucs_webapp
+      dockerfile: ./Dockerfile
+    ports: 
+      - 3000:3000
+  
+  demucs_service:
+    build:
+      context: demucs_service
+      dockerfile: ./Dockerfile
+    ports: 
+      - 5000:5000
+    volumes:
+      - ./separated:/demucs_service/separated
+      - ./songs:/demucs_service/songs
+      - ./models:/demucs_service/lib/demucs/models
